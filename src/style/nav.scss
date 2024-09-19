@@ -1,0 +1,47 @@
+
+nav{
+    width: 100%;
+    height: 7rem;
+    padding: 2rem;
+    box-shadow: 0px 3px 10px #00000005;
+    position: relative;
+    align-content: center;
+    & img[alt^="Logo"]{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 2rem;
+        top: .5rem;
+    }
+    & img[alt="Menu"]{
+        position: absolute;
+        right: 2rem;
+        top: 2.5rem;
+    }
+    & ul{
+        display: none;
+        text-align: right;
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+.barMenu{
+    padding: 1rem;
+    & ul{
+        font-family: 'SairaSemiBold';
+        font-size: 3em;
+        color: #fff;
+        font-weight: 500;
+        & li{
+            opacity: .5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    & .submenu{
+        
+    }
+}
