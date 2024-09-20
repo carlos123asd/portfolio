@@ -19,6 +19,7 @@
 }
 .presentation__tit span:nth-child(1):hover {
   font-family: "MonserratRegular";
+  padding-left: 1.1rem;
 }
 .presentation__tit__boxTextAnimation {
   display: inline-block;
@@ -35,6 +36,31 @@
   background-color: #dbdbdb;
   transform: rotateZ(10deg);
   animation: animationbarra 1s ease infinite;
+}
+.presentation__text {
+  color: #fff;
+  font-family: "MonserratRegular";
+  font-size: 1.82em;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.presentation__text h2 {
+  color: #333;
+}
+.presentation__text p span:nth-child(1) {
+  text-shadow: 0 0 30px rgba(250, 115, 111, 0.7);
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(108deg, #f5b03e, #f53ec2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+}
+.presentation__text p span:nth-child(2) {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(120deg, #dd7a6e, #e3ae75);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes animationbarra {
