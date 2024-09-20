@@ -14,7 +14,7 @@ btnnavMovile.addEventListener('click', () => {
         bloq2.style.opacity = "0"
         bloq3.style.transform = "translate3d(0px, -7px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg)"
         bloq3.style.transformStyle = "preserve-3d"
-        submenu.style.opacity = "1"
+        submenu.style.display = "block"
     }else{
         bloq.style.marginBottom = '.4rem'
         bloq1.style.transform = "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
@@ -22,6 +22,6 @@ btnnavMovile.addEventListener('click', () => {
         bloq2.style.opacity = "1"
         bloq3.style.transform = "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
         bloq3.style.transformStyle = "preserve-3d"
-        submenu.style.opacity = "0"
+        submenu.style.display = "none"
     }
 })

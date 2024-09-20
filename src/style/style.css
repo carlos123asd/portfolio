@@ -1,4 +1,6 @@
 @import url('./nav.css');
+@import url('./contentMain.css');
+@import url('./presentation.css');
 
 @font-face {
   font-family: 'SairaSemiBold';
@@ -8,6 +10,16 @@
 @font-face {
   font-family: 'SairaMedium';
   src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'MonserratRegular';
+  src: url('../media/font/Montserrat/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MonserratSemiBold';
+  src: url('../media/font/Montserrat/static/Montserrat-SemiBold.ttf');
 }
 
 html{

@@ -7,9 +7,11 @@
     <title>AlexDev</title>
     <link rel="stylesheet" href="./src/style/style.css">
     <script src="./src/script/components/btnNavMovile.js" defer></script>
+    <script src="./src/script/load/text.js" defer></script>
   </head>
   <body>
-      <nav>
+    <header>
+        <nav>
           <img src="./src/media/img/logoAlexDev.svg" alt="Logo AlexDev">
           <ul>
             <li>HOME</li>
@@ -18,11 +20,11 @@
             <li>CONTACT</li>
           </ul>
           <div id="btnMenuMovile" class="btnNavMovile">
-             <div class="btnNavMovile__contents">
+            <div class="btnNavMovile__contents">
                 <div class="btnNavMovile__contents__bloq"></div>
                 <div class="btnNavMovile__contents__bloq"></div>
                 <div class="btnNavMovile__contents__bloq"></div>
-             </div>
+            </div>
           </div>
       </nav>
       <div id="barMenu" class="barMenu">
@@ -37,5 +39,20 @@
           <a href="https://github.com/carlos123asd/">GitHub</a>
         </div>
       </div>
+    </header>
+      
+    <div class="contentMain">
+      <section class="presentation">
+        <img class="presentation__img" src="./src/media/img/imgperfil.png" alt="Image Profile">
+        <div class="presentation__tit">
+          <span>Alex</span>
+          <br>
+          <span></span>
+          <div id="contentAnimationText" class="presentation__tit__boxTextAnimation"></div>
+          <div class="presentation__tit__barWrite"></div>
+        </div>
+      </section>
+    </div>
+      
   </body>
 </html>

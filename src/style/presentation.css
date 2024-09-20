@@ -1,0 +1,44 @@
+.presentation__img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.presentation__tit {
+  font-family: "MonserratSemiBold";
+  font-size: 3.5em;
+  line-height: 1.35;
+  color: #dbdbdb;
+}
+.presentation__tit span {
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#fff, #858585);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.presentation__tit span:nth-child(1):hover {
+  font-family: "MonserratRegular";
+}
+.presentation__tit__boxTextAnimation {
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#fff, #858585);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.presentation__tit__barWrite {
+  display: inline-block;
+  width: 3px;
+  height: 46px;
+  margin-left: 5px;
+  background-color: #dbdbdb;
+  transform: rotateZ(10deg);
+  animation: animationbarra 1s ease infinite;
+}
+
+@keyframes animationbarra {
+  50% {
+    height: 30px;
+  }
+}/*# sourceMappingURL=presentation.css.map */

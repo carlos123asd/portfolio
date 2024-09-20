@@ -1,52 +1,55 @@
-
-nav{
-    width: 100%;
-    height: 7rem;
-    padding: 2rem;
-    box-shadow: 0px 3px 10px #00000005;
-    position: relative;
-    align-content: center;
-    & img[alt^="Logo"]{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        left: 2rem;
-        top: .5rem;
-    }
-    & ul{
-        display: none;
-        text-align: right;
-        li{
-            display: inline-block;
+header{
+    width: 100vw;
+    position: fixed;
+    & nav{
+        width: 100%;
+        height: 7rem;
+        padding: 2rem;
+        box-shadow: 0px 3px 10px #00000005;
+        position: relative;
+        align-content: center;
+        & img[alt^="Logo"]{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 2rem;
+            top: .5rem;
         }
-    }
-    & .btnNavMovile{
-        width: 3.5rem;
-        height: 3.5rem;
-        border: 1px #000;
-        border-radius: 50vw;
-        background-color: #353535;
-        position: absolute;
-        right: 2rem;
-        top: 2rem;
-        &__contents{
-            width: 100%;
-            height: 100%;
-            align-content: center;
-            &__bloq:nth-child(1){
-                margin-top: .4rem;
+        & ul{
+            display: none;
+            text-align: right;
+            li{
+                display: inline-block;
             }
-            &__bloq{
-                width: 1.75rem;
-                height: 3.5px;
-                background-color: #ffffffeb;
-                margin: 0 auto;
-                margin-bottom: .4rem;
-                border-radius: 1rem;
-                opacity: 1;
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                transform-style: preserve-3d;
-                transition: transform 1s;
+        }
+        & .btnNavMovile{
+            width: 3.5rem;
+            height: 3.5rem;
+            border: 1px #000;
+            border-radius: 50vw;
+            background-color: #353535;
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            &__contents{
+                width: 100%;
+                height: 100%;
+                align-content: center;
+                &__bloq:nth-child(1){
+                    margin-top: .4rem;
+                }
+                &__bloq{
+                    width: 1.75rem;
+                    height: 3.5px;
+                    background-color: #ffffffeb;
+                    margin: 0 auto;
+                    margin-bottom: .4rem;
+                    border-radius: 1rem;
+                    opacity: 1;
+                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                    transform-style: preserve-3d;
+                    transition: transform 1s;
+                }
             }
         }
     }
@@ -55,8 +58,9 @@ nav{
 .barMenu{
     padding: 1rem;
     padding-top: 4rem;
-    opacity: 0;
-    transition: opacity .5s;
+    display: none;
+    transition: display 3s;
+    background-color: #0b0d0f;
     & ul{
         font-family: 'SairaSemiBold';
         font-size: 3em;
