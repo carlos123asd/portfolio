@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlexDev</title>
     <link rel="stylesheet" href="./src/style/style.css">
+    <script src="./src/script/components/btnNavMovile.js" defer></script>
   </head>
   <body>
       <nav>
@@ -16,9 +17,15 @@
             <li>TRAINING</li>
             <li>CONTACT</li>
           </ul>
-          <img src="./src/media/img/menu.svg" alt="Menu">
+          <div id="btnMenuMovile" class="btnNavMovile">
+             <div class="btnNavMovile__contents">
+                <div class="btnNavMovile__contents__bloq"></div>
+                <div class="btnNavMovile__contents__bloq"></div>
+                <div class="btnNavMovile__contents__bloq"></div>
+             </div>
+          </div>
       </nav>
-      <div class="barMenu">
+      <div id="barMenu" class="barMenu">
         <ul>
           <li>HOME</li>
           <li>WORK</li>

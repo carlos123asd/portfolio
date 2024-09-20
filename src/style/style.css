@@ -5,6 +5,11 @@
   src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-SemiBold.ttf');
 }
 
+@font-face {
+  font-family: 'SairaMedium';
+  src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-Medium.ttf');
+}
+
 html{
   scroll-behavior: smooth;
 }
