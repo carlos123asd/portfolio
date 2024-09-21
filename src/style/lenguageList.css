@@ -1,0 +1,27 @@
+.lenguageList {
+  width: 100%;
+  margin: 4rem 0;
+}
+.lenguageList__content {
+  width: 100%;
+  transform: translateX(0) translateY(0) translateZ(0);
+  animation: scrollx 30s linear infinite;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.lenguageList__content img {
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0.3;
+  height: 50px;
+}
+
+@keyframes scrollx {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50rem)) translateY(0) translateZ(0);
+  }
+}/*# sourceMappingURL=lenguageList.css.map */

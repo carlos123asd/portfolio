@@ -1,3 +1,8 @@
+.animationHello {
+  animation: animationIconHello 1s ease;
+  animation-iteration-count: 3;
+}
+
 .presentation__img {
   width: 250px;
   height: 250px;
@@ -5,10 +10,14 @@
   margin: 0 auto;
 }
 .presentation__tit {
-  font-family: "MonserratSemiBold";
+  font-family: "ProtestRegular";
   font-size: 3.5em;
   line-height: 1.35;
   color: #dbdbdb;
+  text-align: center;
+}
+.presentation__tit div:nth-child(1) {
+  padding-left: 1rem;
 }
 .presentation__tit span {
   display: inline-block;
@@ -16,10 +25,6 @@
   background-image: linear-gradient(#fff, #858585);
   -webkit-background-clip: text;
   background-clip: text;
-}
-.presentation__tit span:nth-child(1):hover {
-  font-family: "MonserratRegular";
-  padding-left: 1.1rem;
 }
 .presentation__tit__boxTextAnimation {
   display: inline-block;
@@ -39,14 +44,23 @@
 }
 .presentation__text {
   color: #fff;
-  font-family: "MonserratRegular";
   font-size: 1.82em;
   letter-spacing: 0.03em;
   line-height: 1.5;
   font-weight: 400;
+  padding: 1rem;
 }
 .presentation__text h2 {
   color: #333;
+  font-family: "SairaRegular";
+}
+.presentation__text h2 span {
+  display: inline-block;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.presentation__text p {
+  font-family: "MonserratRegular";
 }
 .presentation__text p span:nth-child(1) {
   text-shadow: 0 0 30px rgba(250, 115, 111, 0.7);
@@ -66,5 +80,16 @@
 @keyframes animationbarra {
   50% {
     height: 30px;
+  }
+}
+@keyframes animationIconHello {
+  0% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+  50% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1.1) rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(0deg, 0deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   }
 }/*# sourceMappingURL=presentation.css.map */

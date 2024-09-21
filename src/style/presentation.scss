@@ -1,3 +1,7 @@
+.animationHello{
+    animation: animationIconHello 1s ease;
+    animation-iteration-count: 3;
+}
 .presentation{
     &__img{
         width: 250px;
@@ -6,20 +10,20 @@
         margin: 0 auto;
     }
     &__tit{
-        font-family: 'MonserratSemiBold';
+        font-family: 'ProtestRegular';
         font-size: 3.5em;
         line-height: 1.35;
         color: #dbdbdb;
+        text-align: center;
+        & div:nth-child(1){
+            padding-left: 1rem;
+        }
         & span{
             display: inline-block;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(#fff, #858585);
             -webkit-background-clip: text; 
             background-clip: text;
-            &:nth-child(1):hover{
-                font-family: 'MonserratRegular';
-                padding-left: 1.1rem
-            }
         }
         &__boxTextAnimation{
             display: inline-block;
@@ -40,15 +44,22 @@
     }
     &__text{
         color: #fff;
-        font-family: 'MonserratRegular';
         font-size: 1.82em;
         letter-spacing: .03em;
         line-height: 1.5;
         font-weight: 400;
+        padding: 1rem;
         & h2{
             color: #333;
+            font-family: 'SairaRegular';
+            & span{
+                display: inline-block;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                transform-style: preserve-3d;
+            }
         }
         & p{
+            font-family: 'MonserratRegular';
             & span:nth-child(1){
                 text-shadow: 0 0 30px rgba(250, 115, 111, .7);
                 -webkit-text-fill-color: transparent;
@@ -70,5 +81,17 @@
 @keyframes animationbarra {
     50%{
         height: 30px;
+    }
+}
+
+@keyframes animationIconHello {
+    0%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    50%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1.1) rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(0deg, 0deg);
+    }
+    100%{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
 }
