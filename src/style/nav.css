@@ -1,6 +1,7 @@
 header {
   width: 100vw;
   position: fixed;
+  z-index: 1000;
 }
 header nav {
   width: 100%;
@@ -9,6 +10,7 @@ header nav {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.0196078431);
   position: relative;
   align-content: center;
+  background-color: #0b0d0f;
 }
 header nav img[alt^=Logo] {
   width: 100px;
