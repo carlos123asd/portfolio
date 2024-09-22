@@ -2,6 +2,7 @@
 @import url('./contentMain.css');
 @import url('./presentation.css');
 @import url('./lenguageList.css');
+@import url('./proyects.css');
 
 @font-face {
   font-family: 'SairaSemiBold';
@@ -11,6 +12,11 @@
 @font-face {
   font-family: 'SairaMedium';
   src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SairaThin';
+  src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-Thin.ttf');
 }
 
 @font-face {
