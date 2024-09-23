@@ -3,6 +3,8 @@
 @import url('./presentation.css');
 @import url('./lenguageList.css');
 @import url('./proyects.css');
+@import url('./postDescription.css');
+@import url('./status.css');
 
 @font-face {
   font-family: 'SairaSemiBold';

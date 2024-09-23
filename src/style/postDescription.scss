@@ -1,0 +1,40 @@
+.PostDescription{
+    padding: 6.51em 1em;
+    &__tit{
+        font-size: 2.8rem;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(138deg, #68d0ee, #ffbdb2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-family: 'SairaThin';
+        letter-spacing: .03em;
+        margin-bottom: 2rem;
+        & span{
+            font-size: 2.3rem;
+            font-family: 'MonserratRegular';
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(126deg, #68d0ee, #ffbdb2);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+    &__points{
+        & div{
+            margin-bottom: 1.5em;
+        }
+        & h3{
+            font-family: 'MonserratRegular';
+            font-size: 1.75rem;
+            line-height: 1.2;
+            color: #dbdbdb;
+        }
+        & p{
+            font-family: 'MonserratRegular';
+            font-size: 1rem;
+            color: #e0dddd;
+            line-height: 1.5;
+            letter-spacing: .03em;
+            mix-blend-mode: color-dodge;
+        }
+    }
+}
