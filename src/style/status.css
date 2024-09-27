@@ -5,6 +5,7 @@
   line-height: 1.5;
   font-family: "SairaMedium";
   margin: 0 auto;
+  margin-bottom: 3em;
 }
 .status span:nth-child(1) {
   display: inline-block;
@@ -16,4 +17,12 @@
 }
 .status span:nth-child(2) {
   display: inline-block;
+}
+.status span:nth-child(3) {
+  display: block;
+  font-family: "SairaBold";
+  font-size: 16vw;
+  color: rgba(255, 255, 255, 0.9215686275);
+  line-height: 1;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=status.css.map */

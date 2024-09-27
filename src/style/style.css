@@ -5,6 +5,12 @@
 @import url('./proyects.css');
 @import url('./postDescription.css');
 @import url('./status.css');
+@import url('./footer.css');
+
+@font-face {
+  font-family: 'SairaBold';
+  src: url('../media/font/Saira_Semi_Condensed/SairaSemiCondensed-Bold.ttf');
+}
 
 @font-face {
   font-family: 'SairaSemiBold';
