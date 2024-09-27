@@ -3,7 +3,6 @@ footer {
   border: none;
   border-top: 1.5px solid rgba(255, 255, 255, 0.1607843137);
   font-size: 1.5rem;
-  color: #dbdbdb;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -15,8 +14,15 @@ footer {
 footer a:nth-child(1) {
   padding: 1.04em 0;
   text-decoration: none;
+  color: #dbdbdb;
+}
+footer a:nth-child(1):default {
+  color: #dbdbdb;
 }
 footer a:nth-child(1):visited {
+  color: #dbdbdb;
+}
+footer a:nth-child(1):active {
   color: #dbdbdb;
 }
 footer a:nth-child(1) .urisocial1 {
@@ -35,6 +41,7 @@ footer a:nth-child(1) .barsocial1 {
 footer a:nth-child(2) {
   padding: 1.04em 0;
   text-decoration: none;
+  color: #dbdbdb;
 }
 footer a:nth-child(2) .urisocial2 {
   background-image: radial-gradient(circle closest-corner at 50% 150%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -48,6 +55,12 @@ footer a:nth-child(2) .barsocial2 {
   height: 2px;
   margin-top: 0.19em;
 }
+footer a:nth-child(2):default {
+  color: #dbdbdb;
+}
 footer a:nth-child(2):visited {
+  color: #dbdbdb;
+}
+footer a:nth-child(2):active {
   color: #dbdbdb;
 }/*# sourceMappingURL=footer.css.map */
