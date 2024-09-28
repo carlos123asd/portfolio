@@ -21,9 +21,22 @@ header nav img[alt^=Logo] {
 header nav ul {
   display: none;
   text-align: right;
+  color: #fff;
 }
 header nav ul li {
   display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:default {
+  color: #fff;
+}
+header nav ul li a:visited {
+  color: #fff;
+}
+header nav ul li a:active {
+  color: #fff;
 }
 header nav .btnNavMovile {
   width: 3.5rem;
@@ -75,6 +88,18 @@ header nav .btnNavMovile__contents__bloq {
 }
 .barMenu ul li:hover {
   opacity: 1;
+}
+.barMenu ul li a {
+  text-decoration: none;
+}
+.barMenu ul li a:default {
+  color: #fff;
+}
+.barMenu ul li a:visited {
+  color: #fff;
+}
+.barMenu ul li a:active {
+  color: #fff;
 }
 .barMenu__submenu {
   text-align: right;

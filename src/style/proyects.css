@@ -93,6 +93,22 @@
   background-image: linear-gradient(135deg, rgba(60, 128, 87, 0.1), rgba(113, 180, 144, 0.1));
 }
 
+.swiperBar1-drag {
+  background-image: linear-gradient(135deg, rgb(240, 138, 52), rgba(0, 0, 0, 0.1)) !important;
+}
+
+.swiperBar2-drag {
+  background-image: linear-gradient(135deg, rgb(0, 81, 194), rgba(0, 0, 0, 0.1)) !important;
+}
+
+.swiperBar3-drag {
+  background-image: linear-gradient(135deg, rgb(38, 60, 70), rgba(0, 0, 0, 0.1)) !important;
+}
+
+.swiperBar4-drag {
+  background-image: linear-gradient(135deg, rgb(60, 128, 87), rgba(0, 0, 0, 0.1)) !important;
+}
+
 .swiperPhotosProyect {
   width: 100%;
   height: 26.25em;
