@@ -7,6 +7,7 @@ btnnavMovile.addEventListener('click', () => {
     const bloq3 = document.querySelector('.btnNavMovile__contents__bloq:nth-child(3)')
     const fondo = document.getElementById('contentMain')
     const { marginBottom } = window.getComputedStyle(bloq, null);
+    const nav = document.querySelector('nav')
     console.log(marginBottom)
     if(marginBottom === '6.4px'){
         bloq.style.marginBottom = '0'
@@ -16,6 +17,7 @@ btnnavMovile.addEventListener('click', () => {
         bloq3.style.transform = "translate3d(0px, -7px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg)"
         bloq3.style.transformStyle = "preserve-3d"
         submenu.style.display = "block"
+        nav.style.backgroundColor = "#0b0d0f"
         fondo.style.opacity = ".5"
     }else{
         bloq.style.marginBottom = '.4rem'
@@ -25,6 +27,7 @@ btnnavMovile.addEventListener('click', () => {
         bloq3.style.transform = "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
         bloq3.style.transformStyle = "preserve-3d"
         submenu.style.display = "none"
+        nav.style.backgroundColor = "rgba(0,0,0,.1)";
         fondo.style.opacity = "1"
     }
 })

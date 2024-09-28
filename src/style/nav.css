@@ -92,13 +92,16 @@ header nav .btnNavMovile__contents__bloq {
 .barMenu ul li a {
   text-decoration: none;
 }
-.barMenu ul li a:default {
-  color: #fff;
-}
 .barMenu ul li a:visited {
   color: #fff;
 }
 .barMenu ul li a:active {
+  color: #fff;
+}
+.barMenu ul li a:-moz-any-link {
+  color: #fff;
+}
+.barMenu ul li a:any-link {
   color: #fff;
 }
 .barMenu__submenu {

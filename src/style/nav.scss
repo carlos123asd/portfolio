@@ -89,13 +89,13 @@ header{
             }
             & a{
                 text-decoration: none;
-                &:default{
-                    color: #fff; 
-                }
                 &:visited{
                     color: #fff;
                 }
                 &:active{
+                    color: #fff;
+                }
+                &:any-link{
                     color: #fff;
                 }
             }
