@@ -81,6 +81,7 @@ header nav .btnNavMovile__contents__bloq {
   font-size: 3em;
   color: #fff;
   font-weight: 500;
+  list-style: none;
 }
 .barMenu ul li {
   opacity: 0.5;
@@ -122,4 +123,11 @@ header nav .btnNavMovile__contents__bloq {
 }
 .barMenu__submenu a:visited {
   color: rgba(255, 255, 255, 0.5098039216);
+}
+
+@media only screen and (min-width: 760px) {
+  .barMenu {
+    padding: 3rem 5rem;
+    padding-left: 2.5rem;
+  }
 }/*# sourceMappingURL=nav.css.map */
