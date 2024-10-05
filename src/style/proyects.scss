@@ -68,11 +68,15 @@
                     font-family: "SairaMedium";
                     margin-top: 10em;
                     margin-bottom: 1em;
+                    &:hover svg{
+                        scale: 1.2;
+                    }
                     & svg{
                         position: absolute;
                         height: 100%;
                         right: 0;
                         bottom: 0;
+                        transition: scale 1s;
                     }
                     &:visited{
                         color: #ffe5c7;
@@ -127,5 +131,70 @@
     .proyects{
         padding: 0 5rem;
         overflow:auto;
+    }
+}
+
+@media only screen and (min-width: 1008px) {
+    .proyects{
+        &__content{
+            &__bloq{
+                &__info{
+                    padding: 2em 5em;
+                    &__arrow{
+                        & svg{
+                            width: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiperPhotosProyect{
+        height: 50.25em;
+    }
+}
+
+@media only screen and (min-width: 1408px) {
+    .proyects{
+        padding: 0 10em;
+    }
+    .swiperPhotosProyect{
+         padding: 0 5em !important;
+     }
+}
+
+@media only screen and (min-width: 1440px) {
+     .proyects{
+        & h2{
+            font-size: 5em;
+        }
+        &__content{
+            &__bloq{
+                &__info{
+                    padding: 2em 5em;
+                    &__arrow{
+                        font-size: 1.6rem;
+                        & svg{
+                            width: 3%;
+                        }
+                    }
+                    & span{
+                        font-size: 2.2rem;
+                    }
+                    & p{
+                        font-size: 2rem;
+                    }
+                    &__secondp{
+                        font-size: 1.6rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .swiperPhotosProyect{
+        padding: 0 14em !important;
     }
 }

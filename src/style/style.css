@@ -7,6 +7,7 @@
 @import url('./status.css');
 @import url('./footer.css');
 @import url('./toogleTranslate.css');
+@import url('./separator.css');
 
 @font-face {
   font-family: 'SairaBold';

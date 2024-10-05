@@ -67,11 +67,15 @@
   margin-top: 10em;
   margin-bottom: 1em;
 }
+.proyects__content__bloq__info__arrow:hover svg {
+  scale: 1.2;
+}
 .proyects__content__bloq__info__arrow svg {
   position: absolute;
   height: 100%;
   right: 0;
   bottom: 0;
+  transition: scale 1s;
 }
 .proyects__content__bloq__info__arrow:visited {
   color: #ffe5c7;
@@ -118,5 +122,52 @@
   .proyects {
     padding: 0 5rem;
     overflow: auto;
+  }
+}
+@media only screen and (min-width: 1008px) {
+  .proyects__content__bloq__info {
+    padding: 2em 5em;
+  }
+  .proyects__content__bloq__info__arrow svg {
+    width: 3%;
+  }
+  .swiperPhotosProyect {
+    height: 50.25em;
+  }
+}
+@media only screen and (min-width: 1408px) {
+  .proyects {
+    padding: 0 10em;
+  }
+  .swiperPhotosProyect {
+    padding: 0 5em !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .proyects h2 {
+    font-size: 5em;
+  }
+  .proyects__content__bloq__info {
+    padding: 2em 5em;
+  }
+  .proyects__content__bloq__info__arrow {
+    font-size: 1.6rem;
+  }
+  .proyects__content__bloq__info__arrow svg {
+    width: 3%;
+  }
+  .proyects__content__bloq__info span {
+    font-size: 2.2rem;
+  }
+  .proyects__content__bloq__info p {
+    font-size: 2rem;
+  }
+  .proyects__content__bloq__info__secondp {
+    font-size: 1.6rem !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .swiperPhotosProyect {
+    padding: 0 14em !important;
   }
 }/*# sourceMappingURL=proyects.css.map */

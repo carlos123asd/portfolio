@@ -97,4 +97,15 @@
   .presentation {
     padding: 0 5rem;
   }
+}
+@media only screen and (min-width: 1008px) {
+  .presentation {
+    display: flex;
+  }
+  .presentation .contentAux {
+    width: 50%;
+  }
+  .presentation__text {
+    width: 50%;
+  }
 }/*# sourceMappingURL=presentation.css.map */
