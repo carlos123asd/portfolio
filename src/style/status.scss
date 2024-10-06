@@ -30,6 +30,16 @@
         line-height: 1;
         margin-top: 1.5rem;
         cursor: pointer;
+        & a{
+            color: #ffffffeb;
+            text-decoration: none;
+        }
+        & a:visited{
+            color: #ffffffeb;
+        }
+        & a:active{
+            color: #ffffffeb;
+        }
     }
 }
 
