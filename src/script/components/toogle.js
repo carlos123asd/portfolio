@@ -1,5 +1,19 @@
-import es from '../../translate/es.json';
-import en from '../../translate/en.json';
+let es = [];
+let en = [];
+
+fetch('/portfolio/src/translate/es.json')
+  .then(response => response.json())
+  .then(data => {
+    es.push(data);
+  })
+  .catch(error => console.error('Error al cargar el JSON:', error));
+
+  fetch('/portfolio/src/translate/en.json')
+  .then(response => response.json())
+  .then(data => {
+    en.push(data);
+  })
+  .catch(error => console.error('Error al cargar el JSON:', error));
 
 const tooglebtn = document.getElementById('toogleBtn');
 const flag = document.getElementById('flag1');
@@ -50,99 +64,99 @@ tooglebtn.addEventListener('click', () => {
     flag2.classList.toggle('toogleEspRight')
     if(flag.classList.contains('toogleEspRight')){
         //spanish
-        pMain.innerText = es.parrafos.main;
-        menu1.innerHTML = es.menu.item1;
-        menu2.innerHTML = es.menu.item2;
-        menu3.innerHTML = es.menu.item3;
-        menu4.innerHTML = es.menu.item4;
-        menu11.innerHTML = es.menu.item1;
-        menu22.innerHTML = es.menu.item2;
-        menu33.innerHTML = es.menu.item3;
-        menu44.innerHTML = es.menu.item4;
-        tit1.innerHTML = es.titulos.tit1;
-        tit2.innerHTML = es.titulos.tit2;
+        pMain.innerText = es[0].parrafos.main;
+        menu1.innerHTML = es[0].menu.item1;
+        menu2.innerHTML = es[0].menu.item2;
+        menu3.innerHTML = es[0].menu.item3;
+        menu4.innerHTML = es[0].menu.item4;
+        menu11.innerHTML = es[0].menu.item1;
+        menu22.innerHTML = es[0].menu.item2;
+        menu33.innerHTML = es[0].menu.item3;
+        menu44.innerHTML = es[0].menu.item4;
+        tit1.innerHTML = es[0].titulos.tit1;
+        tit2.innerHTML = es[0].titulos.tit2;
         for (const tit of tit3) {
             if(tit.style.color === 'rgb(166, 223, 255)'){
-                tit.innerHTML = es.titulos.tit4;
+                tit.innerHTML = es[0].titulos.tit4;
             }else if(tit.style.color === 'rgb(199, 255, 235)'){
-                tit.innerHTML = es.titulos.tit5;
+                tit.innerHTML = es[0].titulos.tit5;
             }else if(tit.style.color === 'rgb(163, 228, 162)'){
-                tit.innerHTML = es.titulos.tit6;
+                tit.innerHTML = es[0].titulos.tit6;
             }else{
-                tit.innerHTML = es.titulos.tit3;
+                tit.innerHTML = es[0].titulos.tit3;
             }
             
         }
-        pproyecto1.innerHTML = es.parrafos.proyecto1;
-        pproyecto2.innerHTML = es.parrafos.proyecto11;
-        pproyecto3.innerHTML = es.parrafos.proyecto2;
-        pproyecto4.innerHTML = es.parrafos.proyecto22;
-        pproyecto5.innerHTML = es.parrafos.proyecto3;
-        pproyecto6.innerHTML = es.parrafos.proyecto33;
-        pproyecto7.innerHTML = es.parrafos.proyecto4;
-        pproyecto8.innerHTML = es.parrafos.proyecto44;
-        tit4.innerHTML = es.titulos.tit7;
-        tit5.innerHTML = es.titulos.tit8;
-        tit6.innerHTML = es.titulos.tit9;
-        tit7.innerHTML = es.titulos.tit10;
-        tit8.innerHTML = es.titulos.tit11;
-        tit9.innerHTML = es.titulos.tit12;
-        tit10.innerHTML = es.titulos.tit13;
-        obj1.innerHTML = es.parrafos.obj1;
-        obj2.innerHTML = es.parrafos.obj2;
-        obj3.innerHTML = es.parrafos.obj3;
-        obj4.innerHTML = es.parrafos.obj4;
-        obj5.innerHTML = es.parrafos.obj5;
-        obj6.innerHTML = es.parrafos.obj6;
-        status.innerHTML = es.parrafos.status;
-        btnform.innerHTML = es.parrafos.btnform;
+        pproyecto1.innerHTML = es[0].parrafos.proyecto1;
+        pproyecto2.innerHTML = es[0].parrafos.proyecto11;
+        pproyecto3.innerHTML = es[0].parrafos.proyecto2;
+        pproyecto4.innerHTML = es[0].parrafos.proyecto22;
+        pproyecto5.innerHTML = es[0].parrafos.proyecto3;
+        pproyecto6.innerHTML = es[0].parrafos.proyecto33;
+        pproyecto7.innerHTML = es[0].parrafos.proyecto4;
+        pproyecto8.innerHTML = es[0].parrafos.proyecto44;
+        tit4.innerHTML = es[0].titulos.tit7;
+        tit5.innerHTML = es[0].titulos.tit8;
+        tit6.innerHTML = es[0].titulos.tit9;
+        tit7.innerHTML = es[0].titulos.tit10;
+        tit8.innerHTML = es[0].titulos.tit11;
+        tit9.innerHTML = es[0].titulos.tit12;
+        tit10.innerHTML = es[0].titulos.tit13;
+        obj1.innerHTML = es[0].parrafos.obj1;
+        obj2.innerHTML = es[0].parrafos.obj2;
+        obj3.innerHTML = es[0].parrafos.obj3;
+        obj4.innerHTML = es[0].parrafos.obj4;
+        obj5.innerHTML = es[0].parrafos.obj5;
+        obj6.innerHTML = es[0].parrafos.obj6;
+        status.innerHTML = es[0].parrafos.status;
+        btnform.innerHTML = es[0].parrafos.btnform;
     }else{
         //english
-        pMain.innerText = en.parrafos.main;
-        menu1.innerHTML = en.menu.item1;
-        menu2.innerHTML = en.menu.item2;
-        menu3.innerHTML = en.menu.item3;
-        menu4.innerHTML = en.menu.item4;
-        menu11.innerHTML = en.menu.item1;
-        menu22.innerHTML = en.menu.item2;
-        menu33.innerHTML = en.menu.item3;
-        menu44.innerHTML = en.menu.item4;
-        tit1.innerHTML = en.titulos.tit1;
-        tit2.innerHTML = en.titulos.tit2;
+        pMain.innerText = en[0].parrafos.main;
+        menu1.innerHTML = en[0].menu.item1;
+        menu2.innerHTML = en[0].menu.item2;
+        menu3.innerHTML = en[0].menu.item3;
+        menu4.innerHTML = en[0].menu.item4;
+        menu11.innerHTML = en[0].menu.item1;
+        menu22.innerHTML = en[0].menu.item2;
+        menu33.innerHTML = en[0].menu.item3;
+        menu44.innerHTML = en[0].menu.item4;
+        tit1.innerHTML = en[0].titulos.tit1;
+        tit2.innerHTML = en[0].titulos.tit2;
         for (const tit of tit3) {
             if(tit.style.color === 'rgb(166, 223, 255)'){
-                tit.innerHTML = en.titulos.tit4;
+                tit.innerHTML = en[0].titulos.tit4;
             }else if(tit.style.color === 'rgb(199, 255, 235)'){
-                tit.innerHTML = en.titulos.tit5;
+                tit.innerHTML = en[0].titulos.tit5;
             }else if(tit.style.color === 'rgb(163, 228, 162)'){
-                tit.innerHTML = en.titulos.tit6;
+                tit.innerHTML = en[0].titulos.tit6;
             }else{
-                tit.innerHTML = en.titulos.tit3;
+                tit.innerHTML = en[0].titulos.tit3;
             }
             
         }
-        pproyecto1.innerHTML = en.parrafos.proyecto1;
-        pproyecto2.innerHTML = en.parrafos.proyecto11;
-        pproyecto3.innerHTML = en.parrafos.proyecto2;
-        pproyecto4.innerHTML = en.parrafos.proyecto22;
-        pproyecto5.innerHTML = en.parrafos.proyecto3;
-        pproyecto6.innerHTML = en.parrafos.proyecto33;
-        pproyecto7.innerHTML = en.parrafos.proyecto4;
-        pproyecto8.innerHTML = en.parrafos.proyecto44;
-        tit4.innerHTML = en.titulos.tit7;
-        tit5.innerHTML = en.titulos.tit8;
-        tit6.innerHTML = en.titulos.tit9;
-        tit7.innerHTML = en.titulos.tit10;
-        tit8.innerHTML = en.titulos.tit11;
-        tit9.innerHTML = en.titulos.tit12;
-        tit10.innerHTML = en.titulos.tit13;
-        obj1.innerHTML = en.parrafos.obj1;
-        obj2.innerHTML = en.parrafos.obj2;
-        obj3.innerHTML = en.parrafos.obj3;
-        obj4.innerHTML = en.parrafos.obj4;
-        obj5.innerHTML = en.parrafos.obj5;
-        obj6.innerHTML = en.parrafos.obj6;
-        status.innerHTML = en.parrafos.status;
-        btnform.innerHTML = en.parrafos.btnform;
+        pproyecto1.innerHTML = en[0].parrafos.proyecto1;
+        pproyecto2.innerHTML = en[0].parrafos.proyecto11;
+        pproyecto3.innerHTML = en[0].parrafos.proyecto2;
+        pproyecto4.innerHTML = en[0].parrafos.proyecto22;
+        pproyecto5.innerHTML = en[0].parrafos.proyecto3;
+        pproyecto6.innerHTML = en[0].parrafos.proyecto33;
+        pproyecto7.innerHTML = en[0].parrafos.proyecto4;
+        pproyecto8.innerHTML = en[0].parrafos.proyecto44;
+        tit4.innerHTML = en[0].titulos.tit7;
+        tit5.innerHTML = en[0].titulos.tit8;
+        tit6.innerHTML = en[0].titulos.tit9;
+        tit7.innerHTML = en[0].titulos.tit10;
+        tit8.innerHTML = en[0].titulos.tit11;
+        tit9.innerHTML = en[0].titulos.tit12;
+        tit10.innerHTML = en[0].titulos.tit13;
+        obj1.innerHTML = en[0].parrafos.obj1;
+        obj2.innerHTML = en[0].parrafos.obj2;
+        obj3.innerHTML = en[0].parrafos.obj3;
+        obj4.innerHTML = en[0].parrafos.obj4;
+        obj5.innerHTML = en[0].parrafos.obj5;
+        obj6.innerHTML = en[0].parrafos.obj6;
+        status.innerHTML = en[0].parrafos.status;
+        btnform.innerHTML = en[0].parrafos.btnform;
     }
 });
