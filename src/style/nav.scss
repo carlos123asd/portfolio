@@ -18,23 +18,29 @@ header{
             top: .5rem;
         }
         & ul{
+            height: 100%;
             display: none;
-            text-align: right;
             color: #fff;
-            li{
+            font-family: "SairaThin";
+            letter-spacing: .6rem;
+            & li{
                 display: inline-block;
+                padding-left: .6rem;
+                padding-bottom: .4rem;
                 & a{
                     text-decoration: none;
-                    &:default{
-                        color: #fff; 
-                    }
-                    &:visited{
-                        color: #fff;
-                    }
-                    &:active{
-                        color: #fff;
-                    }
+                    color: #fff;
                 }
+                & a:visited{
+                    color: #fff;
+                }
+                & a:active{
+                    color: #fff;
+                }
+            }
+            & li:hover{ 
+                border-bottom: 2px solid #fff;
+                transition: border-bottom 0.15s ease-out;
             }
         }
         & .btnNavMovile{
@@ -127,5 +133,41 @@ header{
     .barMenu{
         padding: 3rem 5rem;
         padding-left: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .btnNavMovile{
+        display: none;
+    }
+    header{
+        & nav{
+            background-color: #0b0d0f;
+            & ul{
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1.5rem;
+                vertical-align: middle;
+                align-items: flex-end;
+            }
+        }
+    }
+    .toogle{
+        right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1424px) {
+    .btnNavMovile{
+        display: none;
+    }
+    header{
+        & nav{
+            & ul{
+                gap: 6rem;
+            }
+        }
     }
 }

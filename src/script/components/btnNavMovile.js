@@ -8,7 +8,6 @@ btnnavMovile.addEventListener('click', () => {
     const fondo = document.getElementById('contentMain')
     const { marginBottom } = window.getComputedStyle(bloq, null);
     const nav = document.querySelector('nav')
-    console.log(marginBottom)
     if(marginBottom === '6.4px'){
         bloq.style.marginBottom = '0'
         bloq1.style.transform = "translate3d(0px, 7px, 45px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg)"

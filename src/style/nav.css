@@ -19,17 +19,19 @@ header nav img[alt^=Logo] {
   top: 0.5rem;
 }
 header nav ul {
+  height: 100%;
   display: none;
-  text-align: right;
   color: #fff;
+  font-family: "SairaThin";
+  letter-spacing: 0.6rem;
 }
 header nav ul li {
   display: inline-block;
+  padding-left: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 header nav ul li a {
   text-decoration: none;
-}
-header nav ul li a:default {
   color: #fff;
 }
 header nav ul li a:visited {
@@ -37,6 +39,10 @@ header nav ul li a:visited {
 }
 header nav ul li a:active {
   color: #fff;
+}
+header nav ul li:hover {
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 0.15s ease-out;
 }
 header nav .btnNavMovile {
   width: 3.5rem;
@@ -129,5 +135,33 @@ header nav .btnNavMovile__contents__bloq {
   .barMenu {
     padding: 3rem 5rem;
     padding-left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .btnNavMovile {
+    display: none;
+  }
+  header nav {
+    background-color: #0b0d0f;
+  }
+  header nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    vertical-align: middle;
+    align-items: flex-end;
+  }
+  .toogle {
+    right: 2rem;
+  }
+}
+@media only screen and (min-width: 1424px) {
+  .btnNavMovile {
+    display: none;
+  }
+  header nav ul {
+    gap: 6rem;
   }
 }/*# sourceMappingURL=nav.css.map */

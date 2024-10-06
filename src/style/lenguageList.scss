@@ -19,9 +19,25 @@
 
 @keyframes scrollx {
     0% {
-        transform: translateX(0) translateY(0) translateZ(0);
+        transform: translateX(100vw) translateY(0) translateZ(0);
     }
     100% {
-        transform: translateX(calc(-100% - 50rem)) translateY(0) translateZ(0);
+        transform: translateX(-100vw) translateY(0) translateZ(0);
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .lenguageList{
+        &__content{
+            gap: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .lenguageList{
+        &__content{
+            gap: 4rem;
+        }
     }
 }

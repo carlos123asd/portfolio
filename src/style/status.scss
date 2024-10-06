@@ -6,6 +6,11 @@
     font-family: "SairaMedium";
     margin: 0 auto;
     margin-bottom: 3em;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
     & span:nth-child(1){
         display: inline-block;
         width: 12px;
@@ -24,5 +29,17 @@
         color: #ffffffeb;
         line-height: 1;
         margin-top: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
     }
 }
