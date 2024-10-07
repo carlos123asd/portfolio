@@ -52,6 +52,7 @@
         & h2{
             color: #333;
             font-family: 'SairaRegular';
+            cursor: url('../media/img/cursorwrite.svg'),auto;
             & span{
                 display: inline-block;
                 transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -60,6 +61,7 @@
         }
         & p{
             font-family: 'MonserratRegular';
+            cursor: url('../media/img/cursorwrite.svg'),auto;
             & span:nth-child(1){
                 text-shadow: 0 0 30px rgba(250, 115, 111, .7);
                 -webkit-text-fill-color: transparent;
@@ -67,6 +69,7 @@
                 -webkit-background-clip: text;
                 background-clip: text;
                 font-weight: 700;
+                cursor: url(../media/img/cursorpointer.svg),pointer;
             }
             & span:nth-child(2){
                 -webkit-text-fill-color: transparent;

@@ -46,6 +46,7 @@
 
 html{
   scroll-behavior: smooth;
+  cursor: url('../media/img/cursorstandar.svg'),auto;
 }
 
 * {

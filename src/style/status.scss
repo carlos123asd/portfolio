@@ -29,10 +29,10 @@
         color: #ffffffeb;
         line-height: 1;
         margin-top: 1.5rem;
-        cursor: pointer;
         & a{
             color: #ffffffeb;
             text-decoration: none;
+            cursor: url('../media/img/cursorpointer.svg'),pointer;
         }
         & a:visited{
             color: #ffffffeb;

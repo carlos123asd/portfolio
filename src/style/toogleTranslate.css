@@ -4,6 +4,7 @@
   position: absolute;
   top: 2.7rem;
   right: 6.5em;
+  cursor: url(../media/img/cursorpointer.svg), pointer;
 }
 .toogle__toogleTheme {
   display: inline-block;

@@ -16,6 +16,7 @@
     }
     & a{
         position: absolute;
+        cursor: url('../media/img/cursorpointer.svg'),pointer;
         & img{
             align-self: center;
             position: absolute;

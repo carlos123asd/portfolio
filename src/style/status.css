@@ -30,11 +30,11 @@
   color: rgba(255, 255, 255, 0.9215686275);
   line-height: 1;
   margin-top: 1.5rem;
-  cursor: pointer;
 }
 .status span:nth-child(3) a {
   color: rgba(255, 255, 255, 0.9215686275);
   text-decoration: none;
+  cursor: url("../media/img/cursorpointer.svg"), pointer;
 }
 .status span:nth-child(3) a:visited {
   color: rgba(255, 255, 255, 0.9215686275);

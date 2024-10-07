@@ -11,6 +11,9 @@ footer {
   margin-top: 1em;
   padding: 1em 0;
 }
+footer a {
+  cursor: url("../media/img/cursorpointer.svg"), pointer;
+}
 footer a:nth-child(1) {
   padding: 1.04em 0;
   text-decoration: none;

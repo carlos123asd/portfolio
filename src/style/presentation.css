@@ -53,6 +53,7 @@
 .presentation__text h2 {
   color: #333;
   font-family: "SairaRegular";
+  cursor: url("../media/img/cursorwrite.svg"), auto;
 }
 .presentation__text h2 span {
   display: inline-block;
@@ -61,6 +62,7 @@
 }
 .presentation__text p {
   font-family: "MonserratRegular";
+  cursor: url("../media/img/cursorwrite.svg"), auto;
 }
 .presentation__text p span:nth-child(1) {
   text-shadow: 0 0 30px rgba(250, 115, 111, 0.7);
@@ -69,6 +71,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 700;
+  cursor: url(../media/img/cursorpointer.svg), pointer;
 }
 .presentation__text p span:nth-child(2) {
   -webkit-text-fill-color: transparent;

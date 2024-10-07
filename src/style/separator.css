@@ -17,6 +17,7 @@
 }
 .separator a {
   position: absolute;
+  cursor: url("../media/img/cursorpointer.svg"), pointer;
 }
 .separator a img {
   align-self: center;

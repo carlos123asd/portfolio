@@ -10,6 +10,9 @@ footer{
     word-spacing: .5rem;
     margin-top: 1em;
     padding: 1em 0;
+    & a{
+        cursor: url('../media/img/cursorpointer.svg'),pointer;
+    }
     & a:nth-child(1){
         padding: 1.04em 0;
         text-decoration: none;

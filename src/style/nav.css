@@ -33,6 +33,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #fff;
+  cursor: url(../media/img/cursorpointer.svg), pointer;
 }
 header nav ul li a:visited {
   color: #fff;
